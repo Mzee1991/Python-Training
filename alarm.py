@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 clock = Tk()
 
 clock.title("DataFlair Alarm Clock")
