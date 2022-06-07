@@ -32,8 +32,22 @@ class linked_list:
         while cur_node is not None:
             if cur_node != self.head:
                 print("Name: {}\nAge: {}\nSex: {}\n".format(
-                        cur_node.name, ncur_node.age, cur_node.sex))
+                    cur_node.name, cur_node.age, cur_node.sex))
             cur_node = cur_node.next
+
+    def get(self, index):
+        if index >= self.length():
+            print("Error: 'Get' Index out of range!")
+            return None
+        cur_idx = 0
+        cur_node = self.head
+        print("Member at index {}:".format(index))
+        while cur_node is not None:
+            cur_node = cur_node.next
+            if cur_idx == index:
+                print("Name: {}\nAge: {}\nSex: {}\n".format(
+                    cur_node.name, cur_node.age, cur_node.sex))
+            cur_idx += 1
 
 
 my_list = linked_list()
@@ -44,5 +58,6 @@ my_list.append('Kyojo', 30, 'Male')
 
 # leng = my_list.length()
 # print("Linked list length {}".format(leng))
-# calling the display fn
+
 my_list.display()
+my_list.get(0)
