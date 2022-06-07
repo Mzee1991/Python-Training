@@ -49,15 +49,32 @@ class linked_list:
                     cur_node.name, cur_node.age, cur_node.sex))
             cur_idx += 1
 
+    def delete(self, index):
+        if index >= self.length():
+            print("ERROR: 'Delete' Index out of range!")
+            return None
+        cur_idx = 0
+        cur_node = self.head
+        while cur_node is not None:
+            last_node = cur_node
+            cur_node = cur_node.next
+            if cur_idx == index:
+                last_node.next = cur_node.next
+                return
+            cur_idx += 1
+
 
 my_list = linked_list()
 my_list.append('Zeus Amadis', 1, 'Male')
 my_list.append('Katia Ramona', 3, 'Female')
 my_list.append('Immy', 30, 'Female')
 my_list.append('Kyojo', 30, 'Male')
+my_list.append('Lilly', 29, 'Female')
 
 # leng = my_list.length()
 # print("Linked list length {}".format(leng))
 
 my_list.display()
-my_list.get(0)
+my_list.get(4)
+my_list.delete(4)
+my_list.display()
