@@ -31,8 +31,8 @@ class linked_list:
         cur_node = self.head
         while cur_node is not None:
             if cur_node != self.head:
-                print("Name: {}\nAge: {}\nSex: {}\n".format(cur_node.name,
-                                                            cur_node.age, cur_node.sex))
+                print("Name: {}\nAge: {}\nSex: {}\n".format(cur_node.name, 
+                        cur_node.age, cur_node.sex))
             cur_node = cur_node.next
 
 
