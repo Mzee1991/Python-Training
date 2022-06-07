@@ -44,5 +44,5 @@ my_list.append('Kyojo', 30, 'Male')
 
 # leng = my_list.length()
 # print("Linked list length {}".format(leng))
-
+#calling the display fn
 my_list.display()
