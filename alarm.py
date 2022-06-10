@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+from tkinter import *
+import datetime
+import time
+import winsound
 clock = Tk()
 
 clock.title("DataFlair Alarm Clock")
