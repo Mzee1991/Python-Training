@@ -36,7 +36,7 @@ class DoublyLinkedList:
             new_node.next.prev = new_node
 
     def insert_end(self, name, age, sex):
-        new_node = Node(data)
+        new_node = Node(name, age, sex)
         if self.head is None:
             self.head = new_node
             return
