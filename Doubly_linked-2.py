@@ -78,9 +78,9 @@ my_list.insert_after(my_list.head, "Aaron", 20, "Male")
 
 my_list.insert_after(my_list.head.next, "Karungi", 23, "Female")
 
-my_list.display_list(my_list.head)
+my_list.display_list()
 
 my_list.deleteNode(my_list.head.next.next.next.next.next)
 
 print()
-my_list.display_list(my_list.head)
+my_list.display_list()
