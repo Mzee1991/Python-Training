@@ -57,12 +57,13 @@ class DoublyLinkedList:
         if dele.prev is not None:
             dele.prev.next = dele.next
 
-    def display_list(self, node):
-
-        while node:
-            print("Name: {}\nAge: {}\nSex: {}\n".format(node.name, node.age, node.sex))
-            last = node
-            node = node.next
+    def display_list(self):
+        cur_node = self.head
+        while cur_node is not None:
+            print("Name: {}\nAge: {}\nSex: {}\n".format(
+                cur_node.name, cur_node.age, cur_node.sex))
+            last = cur_node
+            cur_node = cur_node.next
 
 
 # initialize an empty node
