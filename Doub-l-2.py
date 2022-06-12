@@ -25,13 +25,27 @@ class DoublyLinkedList:
         self.head = new_node
 
     def insert_after(self, prev_node, name, age, sex):
-        if prev_node is None:
-            print("previous node cannot be null")
+        if (self.head == None):
             return
+        if (prev_node != 0):
+            cur_node = self.head
+            for i in range(prev_node - 1) and cur_node is not None:
+                cur_node = cur_node->next
+            if cur_node == None:
+                return None
         new_node = Node(name, age, sex)
-        new_node.next = prev_node.next
-        prev_node.next = new_node
-        new_node.prev = prev_node
+        if new_node == None:
+            return None
+        new_node->name = name
+        new_node->age = age
+        new_node->sex = sex
+        if prev_node == 0:
+            new_node->next = self.head
+            self.head->prev = new_node
+            self.head = new_node
+        new_node.next = cur_node.next
+    cur_node.next = new_node
+        new_node.prev = cur_node
         if new_node.next:
             new_node.next.prev = new_node
 
@@ -74,9 +88,9 @@ my_list.insert_front("Mukasa Joseph", 27, "Male")
 my_list.insert_front("Cecilia Tusingwire", 24, "Female")
 my_list.insert_end("Charles Mwesige", 32, "Male")
 
-my_list.insert_after(my_list.head, "Aaron", 20, "Male")
+my_list.insert_after(2, "Aaron", 20, "Male")
 
-my_list.insert_after(my_list.head.next, "Karungi", 23, "Female")
+my_list.insert_after(0, "Karungi", 23, "Female")
 
 my_list.display_list()
 
