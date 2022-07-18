@@ -1,4 +1,4 @@
-# Max-Heap data structure in Python
+# Max-Heap data structure in Python, implementation of Priority Queue
 
 def heapify(arr, n, i):
     largest = i

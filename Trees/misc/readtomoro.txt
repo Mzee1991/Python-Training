@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/find-the-k-closest-points-to-origin-using-priority-queue/?ref=rp
+https://www.geeksforgeeks.org/priority-queue-using-binary-heap/?ref=rp
+https://www.geeksforgeeks.org/huffman-coding-using-priority-queue/?ref=rp
+https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/
+https://www.geeksforgeeks.org/practice-questions-on-huffman-encoding/?ref=rp
+https://www.geeksforgeeks.org/top-20-greedy-algorithms-interview-questions/?ref=rp
+https://www.geeksforgeeks.org/heap-and-priority-queue-using-heapq-module-in-python/?ref=rp
+https://www.geeksforgeeks.org/priority-queue-using-queue-and-heapdict-module-in-python/?ref=rp
+https://www.programiz.com/dsa/huffman-coding
