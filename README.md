@@ -1,1 +1,1 @@
-# Training session ongoing!
+# Training session ongoing
